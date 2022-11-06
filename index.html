@@ -15,9 +15,8 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="stylesheet" href="./css/header.css">
-    <link rel="stylesheet" href="./css/logo.css">
     <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet" href="./css/modal.css">
     <title>Web Studio</title>
   </head>
   <body>
@@ -58,8 +57,8 @@
       <section class="hero">
         <div class="container"> 
           <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
-          <button class="buttom hero__button" data-modal-open type="button">
-            <span class="hero__button-text">Замовити послугу<span>
+          <button class="button hero__button" data-modal-open type="button">
+            <span class="button__text">Замовити послугу<span>
           </button>
         </div>
       </section>
@@ -153,7 +152,7 @@
               <div class="employee__label">
                 <h3 class="employee__title">Ігор Дем'яненко</h3>
                 <span class="employee__text">Product Designer</span>
-                <ul class="list list-social">
+                <ul class="list list-social employee__list">
                 <li class="list-social__item">
                   <a class="link-social" href="">
                     <svg width="20" height="20">
@@ -195,9 +194,9 @@
               <div class="employee__label">
                 <h3 class="employee__title">Ольга Рєпіна</h3>
                 <span class="employee__text">Frontend Developer</span>
-                  <ul class="list list-social">
-                <li class="list-social__item">
-                  <a class="link-social" href="">
+                <ul class="list list-social employee__list">
+                  <li class="list-social__item">
+                    <a class="link-social" href="">
                     <svg width="20" height="20">
                       <use href="./images/icons.svg#instagram"></use>
                     </svg>
@@ -237,13 +236,13 @@
               <div class="employee__label">
                 <h3 class="employee__title">Микола Тарасов</h3>
                 <span class="employee__text">Marketing</span>
-                  <ul class="list list-social">
-                <li class="list-social__item">
-                  <a class="link-social" href="">
+                <ul class="list list-social employee__list">
+                  <li class="list-social__item">
+                    <a class="link-social" href="">
                     <svg width="20" height="20">
                       <use href="./images/icons.svg#instagram"></use>
                     </svg>
-                  </a>
+                    </a>
                 </li>
                 <li class="list-social__item">
                   <a class="link-social" href="">
@@ -279,7 +278,7 @@
               <div class="employee__label">
                 <h3 class="employee__title">Михайло Єрмаков</h3>
                 <span class="employee__text">UI Designe</span>
-                  <ul class="list list-social">
+                  <ul class="list list-social employee__list">
                 <li class="list-social__item">
                   <a class="link-social" href="">
                     <svg width="20" height="20">
@@ -364,65 +363,64 @@
         </div>
       </section>
     </main>
-    <footer class="bottom-section">
-      <div class="container">
-        <div class="bottom-contact"> 
-          <a class="logo logo--white" href="./index.html">
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="footer__contact"> 
+          <a class="logo footer__logo" href="./index.html">
           <span class="logo__cover">Web</span>Studio</a>
-        <address class="bottom-text"><span class="bottom-span">м. Київ, пр-т Лесі Українки, 26</span></address>
-        <address>
-          <ul>
-          <span class="bottom-span"><a class="link bottom-contact" href="mailto:info@devstudio.com">info@devstudio.com</a></span>
-          <a class="link bottom-contact" href="tel:+380961111111">+38 096 111 11 11</a>
-          </ul>
+        <address class="list footer__list">
+          <li class="footer__item"><span class="footer__text">м. Київ, пр-т Лесі Українки, 26</span></li>
+          <li class="footer__item"><a class="link contact" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+          <li class="footer__item"><a class="link contact" href="tel:+380961111111">+38 096 111 11 11</a></li>
         </address>
       </div>
-        <div class="social-card">
-          <h3 class="bottom-title">Приєднуйтесь</h3>
-          <ul class="list social-list" >
-            <li class="social-item">
-              <a class="social-link" href="">
-                <svg class="social-icon" width="20" height="20">
+        <div class="footer__social">
+          <h3 class="footer__title">Приєднуйтесь</h3>
+          <ul class="list list-social" >
+            <li class="list-social__item">
+              <a  class="link-social footer__link-social" href="">
+                <!-- class="social-icon" -->
+                <svg width="20" height="20">
                   <use href="./images/icons.svg#instagram"></use>
                 </svg>
               </a>
             </li>
-            <li class="social-item">
-              <a class="social-link" href="">
-                <svg class="social-icon"  width="20" height="16.25">
+            <li class="list-social__item">
+              <a class="link-social footer__link-social" href="">
+                <svg width="20" height="16.25">
                   <use href="./images/icons.svg#twitter"></use>
                 </svg>
               </a>
             </li>
-            <li class="social-item">
-              <a class="social-link" href="">
+            <li class="list-social__item">
+              <a class="link-social footer__link-social" href="">
                 <svg class="social-icon" width="10" height="20">
                   <use href="./images/icons.svg#facebook"></use>
                 </svg>
               </a>
             </li>
-            <li class="social-item">
-              <a class="social-link" href="">
-                <svg class="social-icon" width="20" height="20">
+            <li class="list-social__item">
+              <a class="link-social footer__link-social" href="">
+                <svg width="20" height="20">
                   <use href="./images/icons.svg#linkedin"></use>
                 </svg>
               </a>
             </li>
           </ul>
         </div>
-        <form class="footer-form" name="subscription-form">
-          <div role="group" class="subscription-fieldset">
-            <h3 class="subscription-title">Підпишіться на розсилку</h3>
-            <label for="subscription" class="subscription-label visually-hidden">E-mail</label>
-            <input type="email" id="subscription" class="subscription-input" placeholder="E-mail">
-          </div>
-          <button type="submit" class="subscription-button">
-            <span class="subscription-text">Підписатися</span>
-            <svg class="subscription-icon" width="24" height="24">
+        <div class="footer__subscription">
+          <h3 class="footer__title">Підпишіться на розсилку</h3>
+          <form class="footer__form" name="subscription-form">
+            <label for="subscription" class="visually-hidden">E-mail</label>
+            <input type="email" id="subscription" class="footer__input" placeholder="E-mail">
+            <button type="submit" class="button footer__button">
+            <span class="button__text">Підписатися</span>
+            <svg class="footer__icon" width="24" height="24">
               <use href="./images/icons.svg#send-icon"></use>
             </svg>
           </button>
         </form>
+        </div>
       </div>
     </footer>
     <div class="backdoor is-hidden" data-modal>
@@ -432,35 +430,35 @@
             <use href="./images/icons.svg#close-icon"></use>
           </svg>
         </buttom>
-        <form class="modal-form">
-            <h3 class="modal-title">Залиште свої дані, ми вам передзвонимо</h3>
-            <div class="modal-field">
-              <label for="name" class="modal-ladel">Ім'я</label>
-              <input type="text" name="user-name" id="name" class="modal-input">
+        <form class="form modal__form">
+            <h3 class="title title--center modal__title">Залиште свої дані, ми вам передзвонимо</h3>
+            <div class="modal__field">
+              <label for="name" class="form__label modal__label">Ім'я</label>
+              <input type="text" name="user-name" id="name" class="form__input modal__input">
                 <svg width="18" height="18" class="modal-icon">
                   <use href="./images/icons.svg#person-icon"></use>
                 </svg>
             </div>
-            <div class="modal-field">
-              <label for="tel" class="modal-ladel">Телефон</label>
-              <input type="text" name="user-tel" id="tel" class="modal-input">
+            <div class="modal__field">
+              <label for="tel" class="form__label modal__label">Телефон</label>
+              <input type="text" name="user-tel" id="tel" class="form__input modal__input">
               <svg width="18" height="18" class="modal-icon">
                 <use href="./images/icons.svg#phone-icon"></use>
               </svg>
             </div>
-            <div class="modal-field">
-              <label for="email" class="modal-ladel">Пошта</label>
-              <input type="email" name="user-email" id="email" class="modal-input">
+            <div class="modal__field">
+              <label for="email" class="form__label modal__label">Пошта</label>
+              <input type="email" name="user-email" id="email" class="modal__input">
               <svg width="18" height="18" class="modal-icon">
                 <use href="./images/icons.svg#email-icon"></use>
               </svg>
             </div>
-            <div class="modal-field">
-              <label for="comment" class="modal-ladel">Коментар</label>
-              <textarea name="user-comment" id="comment" class="modal-input" placeholder="Введіть текст"></textarea>
+            <div class="modal__field">
+              <label for="comment" class="form__label modal__ladel">Коментар</label>
+              <textarea name="user-comment" id="comment" class="modal__input modal__comment" placeholder="Введіть текст"></textarea>
             </div>
-            <div class="modal-checkbox">
-              <input type="checkbox" name="contract" id="contract" class="checkbox-input visually-hidden">
+            <div class="checkbox modal__checkbox">
+              <input type="checkbox" name="contract" id="contract" class="checkbox__input visually-hidden">
               </label>
               <svg width="16" height="15" class="checkbox-icon">
                 <use href="./images/icons.svg#check-icon"></use>
@@ -468,9 +466,9 @@
               <label for="contract" class="checkbox-label"> 
                 Погоджуюся з розсилкою та приймаю
               </label>
-                <a href="" class="modal-link">Умови договору</a>
+                <a href="" class="modal__link">Умови договору</a>
             </div>
-            <button type="submit" class="button modal-buttom">Відправити</button>
+            <button type="submit" class="button modal__buttom">Відправити</button>
           </form>
       </div>
     </div>

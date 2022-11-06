@@ -2,16 +2,20 @@
 @import "./utils/bases";
 
 @import "./utils/visually-hidden";
+@import "./utils/is-hidden";
 @import "./components/container";
 @import "./components/list";
 @import "./components/link";
 @import "./components/button";
 @import "./components/title";
+@import "./components/logo";
 @import "./components/contact";
 @import "./components/icon";
 @import "./components/list-cards";
 @import "./components/list-social";
 @import "./components/link-social";
+@import "./components/form";
+@import "./components/checkbox";
 
 @import "./components/header";
 @import "./components/hero";
@@ -19,3 +23,6 @@
 @import "./components/development";
 @import "./components/employee";
 @import "./components/clients";
+@import "./components/footer";
+@import "./components/backdoor";
+@import "./components/modal";

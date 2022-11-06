@@ -446,7 +446,7 @@ ul
     gap: 10px;
 } */
 /* clients section */
-.clients-section{
+/* .clients-section{
     padding-top: 94px;
     padding-bottom: 94px;
 }
@@ -475,9 +475,9 @@ ul
 .clients-link:focus{
     border-color: var(--company-color);
     fill: var(--company-color);
-}
+} */
 /* footer */
-.bottom-section{
+/* .bottom-section{
     background-color: #2F303A;
 }
 .bottom-section .container
@@ -487,11 +487,6 @@ ul
     padding-top: 60px;
     padding-bottom: 60px;
 }
-/* .logo.bottom-logo {
-    display: block;
-    color: #FFFFFF;
-    margin-bottom: 20px;
-} */
 .bottom-text{
     color: #fff;
 
@@ -525,8 +520,8 @@ ul
     letter-spacing: 0.03em;
     text-transform: uppercase;
 
-}
-.social-card{
+} */
+/* .social-card{
     margin-left: 70px;
 }
 .social-card .social-item{
@@ -539,24 +534,13 @@ ul
 .social-card .social-link:focus{
     background-color: var(--company-color);
 
-}
+} */
 /* Footer form */
-.footer-form{
+/* .footer-form{
     display: flex;
     justify-content: center;
     align-items: flex-end;
     margin-left: 117px;
-}
-.subscription-title{
-    margin-bottom: 20px;
-
-    color: #fff;
-
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
 }
 
 .subscription-input{
@@ -601,7 +585,7 @@ ul
 }
 .subscription-icon{
     fill: #fff;
-}
+} */
 
 /* product section */
 .product-section{
@@ -698,7 +682,7 @@ ul
     letter-spacing: 0.03em;
 }
 /* Modal */
-.backdoor{
+/* .backdoor{
     position: fixed;
     opacity: 1;
     transition-property: opacity, visibility;
@@ -734,7 +718,7 @@ ul
     height: 581px;
 
     background-color: var(--background-color);
-}
+} */
 .close-buttom {
     display: flex;
     align-items: center;
@@ -760,14 +744,14 @@ ul
     fill: var(--company-color);
     cursor: pointer;
 }
-.is-hidden{
+/* .is-hidden{
     opacity: 0;
     pointer-events: none;
     visibility: hidden;
-}
+} */
 
 /* Modal form */
-.modal-form{
+/* .modal-form{
     margin: 40px;
 }
 .modal-title{
@@ -843,18 +827,14 @@ textarea[class="modal-input"]{
     font-size: 12px;
     line-height: 1.16;
     letter-spacing: 0.01em;
-}
-.modal-checkbox{
-    position: relative;
-    text-align: center;
-    margin-bottom: 30px;
-}
-.modal-link{
+} */
+/* .modal-link {
     color: var(--company-color);
     cursor: pointer;
 
 }
-.modal-buttom{
+
+.modal-buttom {
     display: block;
 
     font-weight: 700;
@@ -870,14 +850,18 @@ textarea[class="modal-input"]{
 
     width: 200px;
     height: 50px;
-    
+
     background-color: var(--company-color);
 
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
     border: none;
     border-radius: 4px;
-}
+} */
+/* .modal-checkbox{
+    text-align: center;
+    margin-bottom: 30px;
+} */
 .checkbox-icon{
     position: absolute;
     top: 0px;

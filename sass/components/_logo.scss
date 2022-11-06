@@ -9,7 +9,7 @@
     letter-spacing: 0.03em;
 
     text-decoration: none;
-}
-.logo__cover {
-    color: var(--company-color);
+    &__cover {
+        color: $company-color;
+    }
 }

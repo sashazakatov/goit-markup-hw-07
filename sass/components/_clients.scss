@@ -19,8 +19,8 @@
         border: 1px solid #AFB1B8;
         border-radius: 4px;
     }
-    &:hover,
-    &:focus {
+    &__link:hover,
+    &__link:focus {
         border-color: $company-color;
         fill: $company-color;
     }

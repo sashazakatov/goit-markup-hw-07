@@ -35,6 +35,12 @@ ul {
   margin: -1px;
 }
 
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
 .container {
   width: 1200px;
   margin-left: auto;
@@ -79,16 +85,9 @@ ul {
 
 .button {
   cursor: pointer;
-  -webkit-transition-property: color, background-color, -webkit-box-shadow;
-  transition-property: color, background-color, -webkit-box-shadow;
-  transition-property: color, background-color, box-shadow;
-  transition-property: color, background-color, box-shadow, -webkit-box-shadow;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  color: #212121;
-  background-color: #F5F4FA;
+  background-color: #2196F3;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   font-family: inherit;
   font-weight: 500;
@@ -98,11 +97,12 @@ ul {
   letter-spacing: 0.03em;
   border: none;
 }
-.button:hover, .button:focus {
+.button__text {
   color: #fff;
-  background-color: #2196F3;
-  -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-          box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.8;
+  letter-spacing: 0.06em;
 }
 
 .title {
@@ -117,8 +117,22 @@ ul {
   text-align: center;
 }
 
+.logo {
+  color: #000000;
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+.logo__cover {
+  color: #2196F3;
+}
+
 .contact {
   font-weight: 500;
+  font-style: normal;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
@@ -144,14 +158,12 @@ ul {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 16px;
   gap: 10px;
 }
 .list-social__item {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background-color: #FFF;
 }
 
 .link-social {
@@ -179,6 +191,69 @@ ul {
 .link-social:hover, .link-social:focus {
   background-color: #2196F3;
   fill: #fff;
+}
+
+.form__label {
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  cursor: pointer;
+}
+.form__input {
+  padding: 11px 11px 11px 32px;
+  width: 100%;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  outline: none;
+}
+.form__comment {
+  resize: none;
+  height: 120px;
+  margin-bottom: 10px;
+}
+.form__comment::-webkit-input-placeholder {
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+}
+.form__comment::-moz-placeholder {
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+}
+.form__comment:-ms-input-placeholder {
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+}
+.form__comment::-ms-input-placeholder {
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+}
+.form__comment::placeholder {
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+}
+.form__checkbox-icon {
+  top: 0px;
+  left: 12px;
+}
+
+.checkbox {
+  position: relative;
+}
+.checkbox__checkbox-icon {
+  position: absolute;
+  border: 2px solid var(--secondory-color);
+  border-radius: 4px;
+}
+.checkbox__checkbox-input:checked + .checkbox__icon {
+  background-color: var(--company-color);
+  border: none;
 }
 
 .header {
@@ -401,6 +476,9 @@ ul {
 .employee__text {
   line-height: 1.71;
 }
+.employee__list {
+  margin-top: 16px;
+}
 
 .clients {
   padding-top: 94px;
@@ -428,7 +506,202 @@ ul {
   border: 1px solid #AFB1B8;
   border-radius: 4px;
 }
-.clients:hover, .clients:focus {
+.clients__link:hover, .clients__link:focus {
   border-color: #2196F3;
   fill: #2196F3;
+}
+
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #2F303A;
+}
+.footer__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+.footer__list {
+  display: block;
+}
+.footer__item {
+  margin-bottom: 9px;
+}
+.footer__text {
+  color: #fff;
+  font-style: inherit;
+  font-style: normal;
+}
+.footer__link-social {
+  background-color: rgba(255, 255, 255, 0.1);
+  fill: #fff;
+}
+.footer__contact {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 400;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+.footer__logo {
+  display: block;
+  margin-bottom: 20px;
+  color: #fff;
+}
+.footer__title {
+  margin-bottom: 20px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.footer__social {
+  margin-left: 70px;
+}
+.footer__subscription {
+  margin-left: 117px;
+}
+.footer__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.footer__input {
+  color: #fff;
+  padding: 11px;
+  background-color: #2F303A;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  outline: none;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  width: 358px;
+  height: 50px;
+}
+.footer__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 12px;
+  width: 200px;
+  height: 50px;
+}
+.footer__icon {
+  margin-left: 10px;
+  fill: #fff;
+}
+
+.backdoor {
+  position: fixed;
+  opacity: 1;
+  -webkit-transition-property: opacity, visibility;
+  transition-property: opacity, visibility;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.modal {
+  position: absolute;
+  -webkit-transition-property: border-color;
+  transition-property: border-color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 3;
+  width: 528px;
+  height: 581px;
+  background-color: #FFF;
+}
+.modal__form {
+  margin: 40px;
+}
+.modal__title {
+  margin-bottom: 12px;
+  font-size: 20px;
+  line-height: 1.15;
+}
+.modal__field {
+  position: relative;
+  margin-bottom: 10px;
+}
+.modal__label {
+  display: block;
+  margin-bottom: 4px;
+}
+.modal__input {
+  cursor: pointer;
+  -webkit-transition-property: border-color;
+  transition-property: border-color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal__input:hover, .modal__input:focus {
+  border-color: #2196F3;
+}
+.modal__icon {
+  -webkit-transition-property: fill;
+  transition-property: fill;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  position: absolute;
+  left: 12px;
+  top: 28px;
+  cursor: pointer;
+}
+.modal__input:hover ~ .modal__icon, .modal__input:focus ~ .modal__icon {
+  fill: #2196F3;
+}
+.modal__link {
+  color: #2196F3;
+  cursor: pointer;
+}
+.modal__buttom {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  height: 50px;
+}
+.modal__checkbox {
+  position: relative;
+  text-align: center;
+  margin-bottom: 30px;
 }/*# sourceMappingURL=main.css.map */

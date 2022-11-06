@@ -1,0 +1,12 @@
+.checkbox{
+    position: relative;
+    &__checkbox-icon {
+        position: absolute;
+        border: 2px solid var(--secondory-color);
+        border-radius: 4px;
+    }
+    &__checkbox-input:checked + &__icon {
+            background-color: var(--company-color);
+            border: none;
+        }
+}
