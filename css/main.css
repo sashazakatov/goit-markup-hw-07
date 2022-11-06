@@ -1,6 +1,6 @@
 body {
-  color: var(--pramiry-color);
-  background-color: var(--background-color);
+  color: #757575;
+  background-color: #FFF;
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   letter-spacing: 0.03em;
@@ -82,8 +82,14 @@ ul {
 
 .link:hover,
 .link:focus {
-  color: var(--company-color);
+  color: #2196F3;
   fill: currentColor;
+}
+
+.contact {
+  color: inherit;
+  font-weight: 500;
+  font-style: normal;
 }
 
 .button {
@@ -131,17 +137,6 @@ ul {
 }
 .logo__cover {
   color: #2196F3;
-}
-
-.contact {
-  font-weight: 500;
-  font-style: normal;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-}
-
-.icon {
-  fill: currentColor;
 }
 
 .list-cards {
@@ -363,16 +358,11 @@ ul {
   padding-bottom: 25px;
 }
 .header__list-contact {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   gap: 50px;
   fill: currentColor;
-  /* padding-top: 33px;
-  padding-bottom: 31px; */
   font-weight: 500;
-  /* line-height: 1.14;
-  letter-spacing: 0.02em; */
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 .header__contact {
   display: -webkit-box;
@@ -384,6 +374,7 @@ ul {
 }
 
 .hero {
+  border: 1px solid #ECECEC;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero-image.jpg");
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-image.jpg");
   background-size: 1600px;
@@ -658,8 +649,8 @@ ul {
 
 .modal {
   position: absolute;
-  -webkit-transition-property: border-color;
-  transition-property: border-color;
+  -webkit-transition-property: border-color, visibility;
+  transition-property: border-color, visibility;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);

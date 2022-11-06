@@ -80,17 +80,17 @@
         padding-bottom: 25px;
     }
     &__list-contact{
-        align-items: center;
+        // align-items: baseline;
         gap: 50px;
         fill: currentColor;
             
-        /* padding-top: 33px;
-        padding-bottom: 31px; */
+        // padding-top: 33px;
+        // padding-bottom: 31px;
             
         font-weight: 500;
             
-        /* line-height: 1.14;
-        letter-spacing: 0.02em; */
+        line-height: 1.14;
+        letter-spacing: 0.02em;
     }
     &__contact{
         display: flex;
