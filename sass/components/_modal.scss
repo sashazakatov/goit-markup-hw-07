@@ -89,12 +89,13 @@
     }
     &__button-close{
         position: absolute;
-        transition-property: fill;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
+        border-radius: 50%;
         right: 8px;
         top: 8px;
+        width: 30px;
+        height: 30px;
+        background-color: $background-color;
+        cursor: pointer;
     }
     &__button-close:hover, 
     &__button-close:focus {
